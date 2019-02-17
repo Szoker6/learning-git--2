@@ -1,1 +1,123 @@
-.test { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+* { box-sizing: border-box; }
+
+.clearfix:before, .row:before, .clearfix:after, .row:after { content: " "; display: table; clear: both; }
+
+body { background-color: #fff; margin: 0 auto; }
+
+.container, .hero, .hero1, .macbook, .subscription, section { width: 100%; max-width: 2000px; margin: 0 auto; }
+
+.hero, .hero1 { height: 800px; background-image: url(http://kuziu.dmkproject.pl/szoker/layout/hero.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; text-align: center; margin: 0 auto; z-index: 2; }
+
+header nav img { position: absolute; top: 40px; display: inline-block; left: 20%; width: 6%; z-index: 3; }
+
+header nav ul { transform: translateX(35%); display: inline-block; position: absolute; top: 25px; z-index: 3; }
+
+header nav li { display: inline-block; padding: 0 5px; }
+
+header nav a { line-height: 50px; color: #fff; font-size: 16px; font-family: "verdana"; }
+
+header nav a:hover { color: #ed145b; text-decoration: none; list-style-type: none; }
+
+.slogan { left: 26%; color: #fff; position: absolute; top: 30%; }
+
+.slogan h1 { margin: 0 0 20px; text-transform: uppercase; font-size: 50px; font-weight: 100; font-family: 'Open Sans'; }
+
+.slogan h1 .bold { font-weight: bold; font-family: "Arial"; }
+
+.slogan .border { position: absolute; width: 200px; height: 2px; left: 39%; top: 40%; background-color: #ed145b; }
+
+.slogan p { opacity: 0.9; font-size: 20px; letter-spacing: 1px; padding: 50px 0; }
+
+.btn, .rectangles .rectangle .rectangle-content .btn1, .join-content h1 .btn2 { cursor: pointer; padding: 12px 0; border: none; position: absolute; left: 39%; background-color: #ed145b; width: 200px; border-radius: 25px; }
+
+.btn:hover, .rectangles .rectangle .rectangle-content .btn1:hover, .join-content h1 .btn2:hover { background-color: rgba(237, 20, 91, 0.8); }
+
+.btn a, .rectangles .rectangle .rectangle-content .btn1 a, .join-content h1 .btn2 a { text-decoration: none; list-style-type: none; color: #fff; font-weight: bold; }
+
+.macbook, .subscription { padding: 0; width: 100%; max-width: 2000px; margin: 0 auto; background-color: #f4f4f4; min-height: 200px; position: relative; }
+
+.borderbottom { margin: 0 auto; background-color: #ed145b; width: 100%; max-width: 2000px; height: 52px; transform: skew(0, -1deg); z-index: 1; position: absolute; top: -35px; }
+
+.row { margin: 35px 0; }
+
+.box { margin: 10% 0 0 50%; width: 47%; position: relative; }
+
+.box h1, .box p { opacity: 0.6; }
+
+.box h5 { padding: 30px 0 0 0; color: #ed145b; text-transform: uppercase; font-weight: bold; }
+
+.border2, .benefits .row .border3, .border4 { width: 200px; height: 2px; background-color: #ed145b; top: 37%; left: 1%; }
+
+.laptop { z-index: 3; position: absolute; right: -0; margin: 4% 0 0 0; }
+
+.laptop img { width: 85%; }
+
+.benefits { margin: 0 auto; padding: 0; background-color: #fff; min-height: 400px; }
+
+.benefits .row { margin: 75px auto 0; position: relative; text-align: center; }
+
+.benefits .row .border3 { position: absolute; top: 50%; left: 45%; }
+
+.benefits .row p { padding: 50px 0 0; }
+
+.benefitsikon { margin: 0 auto; width: 45%; }
+
+.benefitsikon h5 { margin: 20px; padding: 0 0 50px; color: #ed145b; text-transform: uppercase; font-weight: bold; }
+
+.benefitsikon .ikon { padding: 50px 0; cursor: pointer; border: 2px solid #fff; }
+
+.benefitsikon .ikon:hover { border: 2px solid #c5c5c5; border-radius: 50%; }
+
+.hero1 { margin: 0 auto; height: 500px; background-position: center top; }
+
+.hero1 .herocontent { width: 35%; margin: 0 auto; padding: 3% 0; }
+
+.hero1 .marks1, .hero1 .marks2 { padding: 6% 0; }
+
+.hero1 p { color: #fff; font-family: "verdana"; font-size: 18px; }
+
+.hero1 .marks2 { transform: rotate(180deg); }
+
+.textprices { position: relative; margin: 0 auto; text-align: center; }
+
+.textprices h1 { margin: 80px 0; }
+
+.border4 { position: absolute; left: 45%; top: 64%; }
+
+.rectangles { margin: 0 auto; width: 65%; }
+
+.rectangles .rectangle { margin: 30px auto; width: 260px; height: 440px; background-color: #fff; position: relative; }
+
+.rectangles .rectangle .full-rectangle { cursor: pointer; position: absolute; width: 260px; height: 150px; background-color: #5a5a5a; top: -25px; text-align: center; display: inline-block; }
+
+.rectangles .rectangle .full-rectangle:hover { background-color: #ed145b; }
+
+.rectangles .rectangle .full-rectangle h1 { margin: 25px 0 0 0; color: #fff; font-size: 52px; }
+
+.rectangles .rectangle .full-rectangle .dolar { font-size: 24px; }
+
+.rectangles .rectangle .full-rectangle p { color: #fff; }
+
+.rectangles .rectangle .button-rectangle { position: absolute; left: 30px; top: 105px; padding: 5px 0; width: 200px; line-height: 50px; background-color: #f4f4f4; border-radius: 25px; text-align: center; text-transform: uppercase; font-weight: bold; }
+
+.rectangles .rectangle .rectangle-content { position: relative; padding: 35% 0; text-align: center; top: 25%; }
+
+.rectangles .rectangle .rectangle-content p { font-size: 18px; }
+
+.rectangles .rectangle .rectangle-content .btn1 { position: absolute; left: 11%; bottom: 10%; }
+
+.offer-content { width: 65%; padding: 60px 0; margin: 0 auto; }
+
+.offer-content .offer-img { padding: 20px 15px 30px; float: left; }
+
+.offer-content h4 { color: #ed145b; text-transform: uppercase; }
+
+.join-content { width: 100%; padding: 50px 0; background-color: #ed145b; }
+
+.join-content h1 { position: relative; text-align: center; text-transform: uppercase; color: #fff; }
+
+.join-content h1 .btn2 { position: absolute; left: 72%; bottom: -15%; padding: 25px 0; background-color: #fff; }
+
+.join-content h1 .btn2:hover { background-color: rgba(255, 255, 255, 0.8); }
+
+.join-content h1 .btn2 .button-join { position: absolute; color: #ed145b; font-size: 16px; top: 18px; left: 70px; }
